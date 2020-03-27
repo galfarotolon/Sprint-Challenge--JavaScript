@@ -52,19 +52,19 @@ the outer functions are limited and cannot access those functions' variables tha
 
 4. Describe the four rules of the 'this' keyword.
 
-1. Window/Global Object Binding - When the keyword "this" is not set or bound within any context or scope (i.e. a function), it will
-   automatically refer to the window, which is the whole Javascript language object.
+Window/Global Object Binding - When the keyword "this" is not set or bound within any context or scope (i.e. a function), it will
+automatically refer to the window, which is the whole Javascript language object.
 
-1. Implicit Binding - When you call a function and when the function is invoked, whatever is to the left of the dot
-   is what the "this" keyword is going to reference. This is a function invocation.
+Implicit Binding - When you call a function and when the function is invoked, whatever is to the left of the dot
+is what the "this" keyword is going to reference. This is a function invocation.
 
-1. New binding - New binding occurs when creating a Constructor Function. In this case, the keyword "this" refers to the
-   specific instance of the object that is created and returned by the constructor function.
+New binding - New binding occurs when creating a Constructor Function. In this case, the keyword "this" refers to the
+specific instance of the object that is created and returned by the constructor function.
 
-1. Explicit binding - When .call or .apply methods are used, this is an example of explicit binding.
-   Constructor functions can be modified or altered by using explicit binding.
+Explicit binding - When .call or .apply methods are used, this is an example of explicit binding.
+Constructor functions can be modified or altered by using explicit binding.
 
-1. Why do we need super() in an extended class?
+5. Why do we need super() in an extended class?
 
 Since an extended class is using the same properties/methods than the parent class, super() needs to be used in order to inherit or pass along those properties. When used in a constructor, the super() keyword is used before the rest of the “.this” properties for that specific class are established. It is the glue that connects the parent with the child objects.
 
